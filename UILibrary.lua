@@ -1,6 +1,6 @@
 local library = {}
 
-function library:CreateWindow()
+function library:CreateWindow(title)
     local VandalizeLibrary = Instance.new("ScreenGui")
     local Main = Instance.new("Frame")
     local UICorner = Instance.new("UICorner")
@@ -60,7 +60,7 @@ Title.Parent = Main
 Title.BackgroundColor3 = Color3.fromRGB(0, 170, 255)
 Title.Size = UDim2.new(0, 500, 0, 50)
 Title.Font = Enum.Font.GothamBold
-Title.Text = "VANDALIZE"
+Title.Text = title
 Title.TextColor3 = Color3.fromRGB(255, 255, 255)
 Title.TextSize = 35.000
 Title.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
@@ -168,6 +168,6 @@ UIStroke_2.Parent = Button
 UIStroke_2.Transparency = 0
 UIStroke_2.ApplyStrokeMode = UIStroke_2.ApplyStrokeMode.EnumType.Border
 UIStroke_2.LineJoinMode = UIStroke_2.LineJoinMode.EnumType.Round
-return library
-end
 return VandalizeButtonLibrary
+end
+return library
